@@ -83,7 +83,7 @@ public class Controller {
 		 return serviceImpl.searchEmployee(empName);
 	}*/
 	
-	@RequestMapping(value="/{empId}", method=RequestMethod.GET)
+	@RequestMapping(value="/view/{empId}", method=RequestMethod.GET)
 	public Employee findByEmpId(@PathVariable int empId) {
 		
 		 return serviceImpl.searchEmployee(empId);
