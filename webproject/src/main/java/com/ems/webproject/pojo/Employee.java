@@ -1,6 +1,7 @@
 package com.ems.webproject.pojo;
 import javax.xml.bind.annotation.XmlRootElement;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 
 @XmlRootElement
@@ -8,7 +9,7 @@ import org.springframework.data.annotation.Id;
 public class Employee {
 	
 	@Id
-	private String Id;
+	private ObjectId Id;
 	private int empId;
 	private String empName;
 	private double empSalary;
@@ -27,7 +28,7 @@ public class Employee {
 		this.empName = empName;
 	}
 
-	public void setEmpID(int empId) {
+	public void setEmpId(int empId) {
 		this.empId = empId;
 	}
 
